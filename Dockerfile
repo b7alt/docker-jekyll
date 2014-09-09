@@ -1,8 +1,10 @@
 FROM ubuntu:trusty
+MAINTAINER troyswanson <gerphimum@gmail.com>
 
 RUN \
   apt-get update && \
-  DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential ruby ruby-dev nodejs nginx && \
+  DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential && \
+  DEBIAN_FRONTEND=noninteractive apt-get -y install ruby ruby-dev nodejs nginx && \
   apt-get clean && \
   gem install jekyll --no-ri --no-rdoc
 
