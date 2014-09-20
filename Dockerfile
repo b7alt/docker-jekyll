@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM ubuntu:trusty
 MAINTAINER troyswanson <gerphimum@gmail.com>
 
 RUN \
