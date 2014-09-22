@@ -5,7 +5,8 @@ RUN \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get -y install \
     build-essential \
-    nginx python \
+    nginx \
+    python \
     ruby \
     ruby-dev \
     nodejs
