@@ -14,7 +14,6 @@ RUN \
 RUN gem install jekyll --no-ri --no-rdoc
 
 ADD nginx.conf /etc/nginx/nginx.conf
-ADD default /etc/nginx/sites-enabled/default
 
 CMD ["nginx"]
 
